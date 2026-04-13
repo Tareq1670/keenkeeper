@@ -36,7 +36,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className="mt-5 sm:mt-7 lg:mt-10 border-[#1a8862FF]/40"/>
-                <div className="py-6 flex flex-col md:flex-row  md:py-[30px] items-center justify-center md:justify-between  text-center md:text-left  text-[#fafafaFF]/70 ">
+                <div className="py-4 sm:py-6 flex flex-col md:flex-row  md:py-[30px] items-center justify-center md:justify-between  text-center md:text-left  text-[#fafafaFF]/70 space-y-1 ">
                     <div>
                         <p>© 2026 KeenKeeper. All rights reserved.</p>
                     </div>
