@@ -4,7 +4,7 @@ const Counter = () => {
     const headerStyle = "text-[#244d3fFF] text-[32px] font-semibold ";
     const peraStyle = "text-lg text-[#64748bFF]";
     return (
-        <div className="max-w-[1110px] mx-auto mb-[20px] md:mb-[30px] mb-[40px] grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 px-1 md:px-0">
+        <div className="max-w-[1110px] mx-auto mb-[20px] md:mb-[30px] mb-[40px] grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 px-1 md:px-0 text-center">
             <div className={divStyle}>
                 <h2 className={headerStyle}>10</h2>
                 <p className={peraStyle}>Total Friends</p>

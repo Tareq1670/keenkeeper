@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false);
-    console.log(isOpen);
     return (
         <div className='py-2 md:py-4 lg:py-6 px-0 sm:px-1 md:px-2 lg:px-20 flex items-center justify-between relative overflow-hidden shadow bg-white'>
             <div>
@@ -20,7 +19,7 @@ const Navbar = () => {
             <div className='flex md:hidden'>
                 <Hamburger color='black' toggle={setOpen} toggled={isOpen}/>
             </div>
-            <div className={`flex md:hidden flex-col items-center fixed top-16 ${isOpen ? "right-0" : "-right-40"} bg-white p-4 border border-zinc-300 rounded-md transition-all ease-in duration-200 z-50`}>
+            <div className={`flex md:hidden flex-col items-center fixed top-16 ${isOpen ? "right-0 opacity-100" : "-right-40 opacity-0"} bg-white p-4 border border-zinc-300 rounded-md transition-all ease-in duration-200 z-50`}>
                 <MyNavbar link={"/"}>Home</MyNavbar>
                 <MyNavbar link={"/timeline"}>TimeLine</MyNavbar>
                 <MyNavbar link={"/state"}>State</MyNavbar>
