@@ -1,14 +1,11 @@
 import React from "react";
-import { PropagateLoader } from "react-spinners";
+import { ClipLoader } from "react-spinners";
 
 const loading = () => {
     return (
-        <div className="min-h-[600px] flex items-center justify-center">
+        <div className="min-h-[400px] flex items-center max-w-[1110px] mx-auto justify-center">
             <div>
-                <PropagateLoader
-                    color="rgba(70, 157, 99, 1)"
-                    size={10}
-                />
+                <ClipLoader color="#14a326" />
             </div>
         </div>
     );
