@@ -53,8 +53,10 @@ const TimeLinePage = () => {
             });
             return setSortData(last7daysSort);
         }else if(searchValue){
-            const searchSort = log.filter(data => data.name.toLowerCase().includes(searchValue.toLowerCase()))
-            return setSortData(searchSort)
+            const searchSort = log.filter( data => {
+               return data.name.toLowerCase().includes(searchValue.toLowerCase())
+            })
+            return setSortData(searchSort);
         }
          else {
             setSortData(log);
