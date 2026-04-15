@@ -32,7 +32,7 @@ const FriendsDetailsPage = ({ params }) => {
 
     if (!isFind) {
         return (
-            <div className="px-4 mt-[60px] lg:mt-[100px] mb-[60px] max-w-[1110px] mx-auto w-full flex items-center justify-center h-90">
+            <div className="px-1 md:px-0 my-[60px] md:my-[70px] lg:my-[80px] max-w-[1110px] mx-auto w-full flex items-center justify-center h-90">
                 <div className="text-center max-w-sm">
                     {/* Minimalist Icon Circle */}
                     <div className="w-16 h-16 bg-slate-50 text-slate-400 rounded-full flex items-center justify-center mx-auto mb-6 border border-slate-100">
@@ -85,10 +85,7 @@ const FriendsDetailsPage = ({ params }) => {
 
     const { handleLogs, log } = useContext(ProviderContext);
 
-    console.log(log);
-
     const handleCallLogs = (type) => {
-        console.log("click ", type);
 
         const now = new Date();
 
@@ -284,10 +281,10 @@ const FriendsDetailsPage = ({ params }) => {
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="#94a3b8"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="mb-4"
+                                        strokeWidth="1.5"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        className="mb-4"
                                     >
                                         <path d="M12 8v4l3 3" />
                                         <circle cx="12" cy="12" r="9" />
@@ -322,7 +319,7 @@ const FriendsDetailsPage = ({ params }) => {
                                                         {logs.name}
                                                     </h2>
                                                     <p className="text-[14px] md:text-[16px] line-clamp-1 text-[#64748bFF]">
-                                                        Asked for career advice
+                                                        Asked for career advice by {logs.logType}
                                                     </p>
                                                 </div>
                                             </div>
