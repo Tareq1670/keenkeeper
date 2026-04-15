@@ -3,11 +3,17 @@ import LogList from "@/Components/LogList";
 import { ProviderContext } from "@/Context/context.provider";
 import React, { useContext, useEffect, useState } from "react";
 import { BsClipboardX } from "react-icons/bs";
+import { IoIosSearch } from "react-icons/io";
 
 const TimeLinePage = () => {
     const { log } = useContext(ProviderContext);
     const [filterValue, setFilterValue] = useState("");
     const [sortData, setSortData] = useState(log);
+    const [searchValue, setSearchValuer] = useState("");
+
+    const handleInput = (e) => {
+        setSearchValuer(e.target.value)
+    }
 
     useEffect(() => {
         const today = new Date();
@@ -46,29 +52,43 @@ const TimeLinePage = () => {
                 return logDate >= last7days;
             });
             return setSortData(last7daysSort);
-        } else {
+        }else if(searchValue){
+            const searchSort = log.filter(data => data.name.toLowerCase().includes(searchValue.toLowerCase()))
+            return setSortData(searchSort)
+        }
+         else {
             setSortData(log);
         }
-    }, [filterValue, log]);
+    }, [filterValue, log,searchValue]);
 
     return (
         <div className="px-1 lg:px-0 my-[60px] md:my-[70px] lg:my-[80px] max-w-[1110px] mx-auto w-full">
             <h2 className="text-[#1f2937FF] text-5xl font-bold mb-4 md:mb-6">
                 Timeline
             </h2>
-            <select
-                defaultValue={filterValue}
-                onChange={(e) => setFilterValue(e.target.value)}
-                className="max-w-[350px] w-full border-2 border-zinc-400 outline-none rounded-md px-4 py-3 text-[18px] text-[#64748bFF] mb-[20px] md:mb-[30px] lg:mb-[40px] "
-            >
-                <option value="">Filter timeline</option>
-                <option value="call">Call</option>
-                <option value="text">Text</option>
-                <option value="video">Video</option>
-                <option value="today">Today</option>
-                <option value="yesterday">Yesterday</option>
-                <option value="7days">Last 7 Days</option>
-            </select>
+            <div className=" mb-[20px] md:mb-[30px] lg:mb-[40px]  flex flex-col sm:flex-row justify-between space-y-2">
+                <div className="w-full">
+                    <select
+                        defaultValue={filterValue}
+                        onChange={(e) => setFilterValue(e.target.value)}
+                        className="w-full sm:max-w-[350px] w-full border-1 border-zinc-400 outline-none rounded-md px-4 py-3 text-[18px] text-[#64748bFF]"
+                    >
+                        <option value="">Filter timeline</option>
+                        <option value="call">Call</option>
+                        <option value="text">Text</option>
+                        <option value="video">Video</option>
+                        <option value="today">Today</option>
+                        <option value="yesterday">Yesterday</option>
+                        <option value="7days">Last 7 Days</option>
+                    </select>
+                </div>
+                <div className="w-full sm:max-w-[30%] w-full">
+                    <label className=" input w-full border-1 border-zinc-400 outline-none rounded-md px-4 py-3 text-[18px] text-[#64748bFF] h-auto w-auto">
+                        <IoIosSearch />
+                        <input onChange={handleInput} type="text" placeholder="Search your timeline" />
+                    </label>
+                </div>
+            </div>
 
             <div>
                 {!sortData.length ? (
