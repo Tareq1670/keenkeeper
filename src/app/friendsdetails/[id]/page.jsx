@@ -2,7 +2,7 @@ import FriendsDetailsPage from "@/Components/Details";
 
 const friendsDataPromise = async () => {
     const res = await fetch(
-        "https://keenkeeper-ten.vercel.app/friendsdata.json",
+        "https://keenkeeper-ten.vercel.app/friendsdata.json",{cache:"no-store"}
     );
     return res.json();
 };
