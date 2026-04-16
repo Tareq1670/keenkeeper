@@ -1,17 +1,12 @@
 import FriendsDetailsPage from "@/Components/Details";
 
-const friendsDataPromise = async () => {
-    const res = await fetch(
-        "https://keenkeeper-ten.vercel.app/friendsdata.json",{cache:"no-store"}
-    );
-    return res.json();
-};
-const allData = await friendsDataPromise();
-
 export async function generateMetadata({ params }) {
     const { id } = await params;
-
+    const res = await fetch(
+        "https://keenkeeper-ten.vercel.app/friendsdata.json",{cache:"no-store"});
+    const allData = await res.json();
     const isFind = allData.find((data) => data.id === Number(id));
+    console.log(allData);
 
     return {
         title: isFind ? `${isFind?.name} || Details` : "Friends is not found!",
@@ -22,7 +17,7 @@ export async function generateMetadata({ params }) {
 const page = () => {
     return (
         <div>
-            <FriendsDetailsPage allData={allData} />
+            <FriendsDetailsPage />
         </div>
     );
 };
