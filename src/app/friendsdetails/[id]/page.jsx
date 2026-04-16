@@ -134,7 +134,7 @@ const FriendsDetailsPage = ({ params }) => {
                                 className="w-[80px] h-[80px] rounded-full object-cover"
                             />
                             <div className="space-y-2">
-                                <h2>{name}</h2>
+                                <h2 className="text-[#1f2937FF] text-[20px] font-semibold">{name}</h2>
                                 <p
                                     className={`text-white text-[12px] font-medium badge ${status.toLowerCase() === "overdue" ? "bg-red-500" : status.toLowerCase() === "almost due" ? "bg-yellow-500" : status.toLowerCase() === "on-track" ? "bg-[#244d3fFF]" : ""} h-auto w-auto py-[6px] px-[8px] capitalize rounded-full`}
                                 >
@@ -273,7 +273,7 @@ const FriendsDetailsPage = ({ params }) => {
                         </div>
                         <div>
                             {!isThisLog.length ? (
-                                <div class="flex flex-col items-center justify-center p-10 border-2 border-dashed border-gray-200 rounded-3xl">
+                                <div className="flex flex-col items-center justify-center p-10 border-2 border-dashed border-gray-200 rounded-3xl">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="48"
@@ -289,7 +289,7 @@ const FriendsDetailsPage = ({ params }) => {
                                         <path d="M12 8v4l3 3" />
                                         <circle cx="12" cy="12" r="9" />
                                     </svg>
-                                    <h2 class="text-lg font-medium text-gray-400 uppercase tracking-widest">
+                                    <h2 className="text-lg font-medium text-gray-400 uppercase tracking-widest">
                                         No History Available
                                     </h2>
                                 </div>

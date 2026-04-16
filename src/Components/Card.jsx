@@ -17,9 +17,11 @@ const Card = ({ friend }) => {
                         className="h-[80px] w-[80px] rounded-full object-cover"
                     />
                 </div>
-                <h2 className="">{name}</h2>
-                <p className="">{days_since_contact}d ago</p>
-                <div className="flex items-center flex-wrap text-center justify-center gap-2">
+                <h2 className="text-[#1f2937FF] text-[20px] font-semibold">
+                    {name}
+                </h2>
+                <p className="text-[#64748bFF] text-[12px]">{days_since_contact}d ago</p>
+                <div className="flex items-center flex-wrap text-center mt-2 justify-center gap-2">
                     {tags.map((tag, i) => (
                         <p
                             className="h-auto w-auto py-[6px] px-[8px] font-medium text-[12px] badge bg-[#bcffd3] rounded-full uppercase text-black"

@@ -18,7 +18,13 @@ const TimeLinePage = () => {
     useEffect(() => {
         const today = new Date();
 
-        if (filterValue === "call") {
+        if(searchValue){
+            const searchSort = log.filter( data => {
+               return data.name.toLowerCase().includes(searchValue.toLowerCase())
+            })
+            return setSortData(searchSort);
+        }
+        else if (filterValue === "call") {
             const callSort = log.filter((data) => data.logType === "Call");
             return setSortData(callSort);
         } else if (filterValue === "text") {
@@ -52,15 +58,11 @@ const TimeLinePage = () => {
                 return logDate >= last7days;
             });
             return setSortData(last7daysSort);
-        }else if(searchValue){
-            const searchSort = log.filter( data => {
-               return data.name.toLowerCase().includes(searchValue.toLowerCase())
-            })
-            return setSortData(searchSort);
         }
          else {
             setSortData(log);
         }
+
     }, [filterValue, log,searchValue]);
 
     return (
