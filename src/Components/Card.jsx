@@ -20,7 +20,9 @@ const Card = ({ friend }) => {
                 <h2 className="text-[#1f2937FF] text-[20px] font-semibold">
                     {name}
                 </h2>
-                <p className="text-[#64748bFF] text-[12px]">{days_since_contact}d ago</p>
+                <p className="text-[#64748bFF] text-[12px]">
+                    {days_since_contact}d ago
+                </p>
                 <div className="flex items-center flex-wrap text-center mt-2 justify-center gap-2">
                     {tags.map((tag, i) => (
                         <p

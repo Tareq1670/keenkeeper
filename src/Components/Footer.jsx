@@ -22,19 +22,28 @@ const Footer = () => {
                     <div className="flex flex-col space-y-2 md:space-y-4 items-center justify-center">
                         <h2 className="text-white text-[20px]">Social Links</h2>
                         <div className="flex mx-auto space-x-2">
-                            <Link href={""} className="bg-white p-2 rounded-full hover:text-blue-600 transition-all ease-in duration-200">
-                                <AiFillInstagram/>
+                            <Link
+                                href={""}
+                                className="bg-white p-2 rounded-full hover:text-blue-600 transition-all ease-in duration-200"
+                            >
+                                <AiFillInstagram />
                             </Link>
-                            <Link href={""}  className="bg-white p-2 rounded-full hover:text-blue-600 transition-all ease-in duration-200">
+                            <Link
+                                href={""}
+                                className="bg-white p-2 rounded-full hover:text-blue-600 transition-all ease-in duration-200"
+                            >
                                 <FaSquareFacebook />
-                            </Link >
-                            <Link href={""}  className="bg-white p-2 rounded-full hover:text-blue-600 transition-all ease-in duration-200">
+                            </Link>
+                            <Link
+                                href={""}
+                                className="bg-white p-2 rounded-full hover:text-blue-600 transition-all ease-in duration-200"
+                            >
                                 <FaXTwitter />
                             </Link>
                         </div>
                     </div>
                 </div>
-                <hr className="mt-5 sm:mt-7 lg:mt-10 border-[#1a8862FF]/40"/>
+                <hr className="mt-5 sm:mt-7 lg:mt-10 border-[#1a8862FF]/40" />
                 <div className="py-4 sm:py-6 flex flex-col md:flex-row  md:py-[30px] items-center justify-center md:justify-between  text-center md:text-left  text-[#fafafaFF]/70 space-y-1 ">
                     <div>
                         <p>© 2026 KeenKeeper. All rights reserved.</p>

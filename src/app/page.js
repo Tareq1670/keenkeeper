@@ -6,7 +6,7 @@ import { ClipLoader } from "react-spinners";
 
 export default function Home() {
     const promiseData = fetch(
-        "https://keenkeeper-ten.vercel.app/friendsdata.json",{cache:"no-store"}
+        "https://keenkeeper-ten.vercel.app/friendsdata.json",
     ).then((res) => res.json());
     return (
         <div>
