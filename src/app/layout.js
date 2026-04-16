@@ -1,14 +1,10 @@
-import { Geist } from "next/font/google";
+
 import "./globals.css";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import Providers from "./lib/providers";
 import { Bounce, ToastContainer } from "react-toastify";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
 
 export const metadata = {
     title: "KeenKeeper || Home Page",
@@ -21,9 +17,9 @@ export default function RootLayout({ children }) {
             suppressHydrationWarning
             data-theme="light"
             lang="en"
-            className={`${geistSans.variable} h-full antialiased`}
+            className={` h-full antialiased`}
         >
-            <body className="min-h-full flex flex-col bg-[#f8fafc]">
+            <body className="geistFont min-h-full flex flex-col bg-[#f8fafc]">
                 <Providers>
                     <Navbar />
                     {children}

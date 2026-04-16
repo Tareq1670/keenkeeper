@@ -59,7 +59,17 @@ const TimeLinePage = () => {
                 return logDate >= last7days;
             });
             return setSortData(last7daysSort);
-        } else {
+        }else if(filterValue === "newest"){
+            const newestSort = [...log].sort((a,b) =>  {return new Date(b.date).getTime() - new Date(a.date).getTime()});
+            clg
+            return setSortData(newestSort)
+        }
+        else if(filterValue === "oldest"){
+            const oldestSort = [...log].sort((a,b) =>  {return new Date(a.date).getTime() - new Date(b.date).getTime()});
+            clg
+            return setSortData(oldestSort)
+        }
+         else {
             setSortData(log);
         }
     }, [filterValue, log, searchValue]);
@@ -77,6 +87,8 @@ const TimeLinePage = () => {
                         className="w-full sm:max-w-[350px] w-full border-1 border-zinc-400 outline-none rounded-md px-4 py-3 text-[18px] text-[#64748bFF]"
                     >
                         <option value="">Filter timeline</option>
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
                         <option value="call">Call</option>
                         <option value="text">Text</option>
                         <option value="video">Video</option>

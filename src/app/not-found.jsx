@@ -18,12 +18,13 @@ const NotFoundPage = () => {
                     </h2>
 
                     <p className="text-slate-500 mb-8 leading-relaxed">
-                        The page you are looking for might have been removed,
-                        had its name changed, or is temporarily unavailable.
+                        The page you’re looking for is not valid or doesn’t
+                        exist. Please check the URL or try navigating to a valid
+                        page.
                     </p>
 
                     <Link href="/">
-                        <button className="px-8 py-3 bg-slate-900 text-white font-medium rounded-full hover:bg-slate-800 transition-all shadow-lg hover:shadow-slate-200 active:scale-95 cursor-pointer">
+                        <button className="px-8 py-3 bg-[#244d3f] text-white font-medium rounded-md hover:bg-[#154435] transition-all shadow-lg hover:shadow-slate-200 active:scale-95 cursor-pointer">
                             Back to Home
                         </button>
                     </Link>

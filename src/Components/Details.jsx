@@ -67,7 +67,7 @@ const FriendsDetailsPage = ({ params }) => {
                         check the ID or go back to the list.
                     </p>
 
-                    <Link href={"/"} className="btn btn-neutral">
+                    <Link href={"/"} className="btn bg-[#244d3f] text-white hover:bg-[#0c392b]">
                         Return Home
                     </Link>
                 </div>
