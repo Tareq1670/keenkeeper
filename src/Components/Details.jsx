@@ -17,10 +17,6 @@ import {
 import { RiDeleteBinLine } from "react-icons/ri";
 import { toast } from "react-toastify";
 
-export const metadata = {
-    title: "KeenKeeper || Detail Page",
-    description: "Friends all information detail hare",
-};
 
 const friendsDataPromise = async () => {
     const res = await fetch(
@@ -30,6 +26,7 @@ const friendsDataPromise = async () => {
 };
 
 const friendsData = friendsDataPromise();
+
 const FriendsDetailsPage = ({ params }) => {
     const { id: userId } = useParams(params);
     const allData = use(friendsData);
