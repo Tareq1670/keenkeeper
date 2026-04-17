@@ -25,13 +25,13 @@ const StatusPage = () => {
     ];
 
     return (
-        <div className="px-1 md:px-0 lg:px-0 my-[60px] md:my-[70px] lg:my-[80px] max-w-[1110px] mx-auto w-full">
+        <div className="px-1 md:px-0 lg:px-0 my-[50px] md:my-[70px] lg:my-[80px] max-w-[1110px] mx-auto w-full">
             <h2 className=" text-3xl md:text-4xl md:text-5xl text-[#1f2937] font-bold mb-6">
                 Friendship Analytics
             </h2>
 
             {!log.length ? (
-                <div className="w-full h-[450px] bg-white border border-zinc-200 rounded-md shadow-sm flex flex-col items-center justify-center p-8 text-center">
+                <div className="w-full h-[300px] md:h-[450px] bg-white border border-zinc-200 rounded-md shadow-sm flex flex-col items-center justify-center p-8 text-center">
                     <div className="w-20 h-20 bg-zinc-50 rounded-full flex items-center justify-center mb-4">
                         <svg
                             className="w-10 h-10 text-zinc-400"
@@ -55,13 +55,13 @@ const StatusPage = () => {
                     </p>
                 </div>
             ) : (
-                <div className="w-full h-[450px] bg-white border border-zinc-200 p-4 md:p-8 rounded-md shadow-sm">
+                <div className="w-full h-[400px] md:h-[450px] bg-white border border-zinc-200 p-4 md:p-8 rounded-md shadow-sm">
                     <h2 className="text-[#244d3f] text-[20px] font-medium mb-4">
                         By Interaction Type
                     </h2>
 
                     <div className="w-full h-[300px]">
-                        <ResponsiveContainer width="100%" height="100%">
+                        <ResponsiveContainer width="100%" height="100%" >
                             <PieChart>
                                 <Pie
                                     data={data}

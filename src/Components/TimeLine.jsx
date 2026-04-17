@@ -75,11 +75,11 @@ const TimeLinePage = () => {
     }, [filterValue, log, searchValue]);
 
     return (
-        <div className="px-1 lg:px-0 my-[60px] md:my-[70px] lg:my-[80px] max-w-[1110px] mx-auto w-full">
-            <h2 className="text-[#1f2937FF] text-5xl font-bold mb-4 md:mb-6">
+        <div className="px-1 lg:px-0 my-[50px] md:my-[70px] lg:my-[80px] max-w-[1110px] mx-auto w-full">
+            <h2 className="text-[#1f2937FF] text-4xl md:text-5xl font-bold mb-4 md:mb-6">
                 Timeline
             </h2>
-            <div className=" mb-[20px] md:mb-[30px] lg:mb-[40px]  flex flex-col sm:flex-row justify-between space-y-2">
+            <div className=" mb-[20px] md:mb-[30px] lg:mb-[40px]  flex flex-col-reverse sm:flex-row justify-between gap-2">
                 <div className="w-full">
                     <select
                         defaultValue={filterValue}
@@ -111,7 +111,7 @@ const TimeLinePage = () => {
 
             <div>
                 {!sortData.length ? (
-                    <div className="flex flex-col items-center justify-center min-h-[400px] p-6 text-center border border-zinc-200 rounded-md">
+                    <div className="flex flex-col items-center justify-center min-h-[300px] md:min-h-[400px] p-6 text-center border border-zinc-200 rounded-md">
                         <div className="bg-gray-100 p-4 rounded-full mb-4">
                             <BsClipboardX size={48} className="text-gray-400" />
                         </div>

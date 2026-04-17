@@ -15,6 +15,7 @@ const Navbar = () => {
                     width={141}
                     height={29}
                     alt="Navbar Logo Image"
+                    className="pl-1 md:pl-0"
                 />
             </Link>
             <div className="hidden md:flex items-center">
@@ -23,7 +24,7 @@ const Navbar = () => {
                 <MyNavbar link={"/state"}>State</MyNavbar>
             </div>
             <div className="flex md:hidden">
-                <Hamburger color="black" toggle={setOpen} toggled={isOpen} />
+                <Hamburger size={30} color="black" toggle={setOpen} toggled={isOpen} />
             </div>
             <div
                 className={`flex md:hidden flex-col items-center fixed top-16 ${isOpen ? "right-0 opacity-100" : "-right-40 opacity-0"} bg-white p-4 border border-zinc-300 rounded-md transition-all ease-in duration-200 z-50`}
@@ -35,6 +36,7 @@ const Navbar = () => {
             {isOpen && (
                 <div
                     onClick={() => setOpen(false)}
+                    onTouchMove={() => setOpen(false)}
                     className="fixed bg-black/10 inset-0 z-40"
                 ></div>
             )}

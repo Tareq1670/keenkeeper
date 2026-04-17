@@ -270,7 +270,7 @@ const FriendsDetailsPage = ({ params }) => {
                     {/* Show data */}
                     <div className="bg-white shadow-md rounded-md p-4 md:p-6 space-y-4">
                         <div className="flex justify-between items-center mb-[20px]">
-                            <h2 className="text-[#244d3fFF] text-[20px] font-medium">
+                            <h2 className="text-[#244d3fFF] text-[16px] md:text-[20px] font-medium">
                                 Recent Interactions
                             </h2>
                             <button className="flex items-center btn justify-center">
@@ -295,7 +295,7 @@ const FriendsDetailsPage = ({ params }) => {
                                         <path d="M12 8v4l3 3" />
                                         <circle cx="12" cy="12" r="9" />
                                     </svg>
-                                    <h2 className="text-lg font-medium text-gray-400 uppercase tracking-widest">
+                                    <h2 className="text-lg font-medium text-gray-400 uppercase tracking-widest text-center">
                                         No History Available
                                     </h2>
                                 </div>
@@ -303,7 +303,7 @@ const FriendsDetailsPage = ({ params }) => {
                                 isThisLog.map((logs, i) => (
                                     <div
                                         key={i}
-                                        className="border border-zinc-200  p-2 md:p-4"
+                                        className="border border-zinc-200 bg-zinc-50  p-2 md:p-4"
                                     >
                                         <div className="flex justify-between items-center">
                                             <div className="flex items-center space-x-3 w-1/2">
@@ -321,7 +321,7 @@ const FriendsDetailsPage = ({ params }) => {
                                                     )}
                                                 </div>
                                                 <div>
-                                                    <h2 className="text-[#1f2937FF] font-semibold text-[18px]">
+                                                    <h2 className="text-[#1f2937FF] font-semibold text-[18px] line-clamp-1">
                                                         {logs.name}
                                                     </h2>
                                                     <p className="text-[14px] md:text-[16px] line-clamp-1 text-[#64748bFF]">
@@ -334,9 +334,9 @@ const FriendsDetailsPage = ({ params }) => {
                                                 <p className="text-[12px] md:text-[14px] text-[#64748bFF]">
                                                     {logs?.date
                                                         ? new Date(
-                                                              logs.date,
-                                                          ).toLocaleDateString(
-                                                              "en-US",
+                                                              logs.date
+                                                          ).toLocaleString(
+                                                              "en-BD",
                                                               {
                                                                   month: "short",
                                                                   day: "numeric",

@@ -15,7 +15,7 @@ const Footer = () => {
                         alt="Footer Logo Image"
                         className="w-60 md:w-80 lg:w-110 h-auto"
                     />
-                    <p className="text-white/80 mt-2 md:mt-4  mb-4 md:mb-6">
+                    <p className="text-white/80 text-[14px] md:text-[16px] mt-2 md:mt-4  mb-4 md:mb-6">
                         Your personal shelf of meaningful connections. Browse,
                         tend, and nurture the relationships that matter most.
                     </p>
@@ -44,7 +44,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className="mt-5 sm:mt-7 lg:mt-10 border-[#1a8862FF]/40" />
-                <div className="py-4 sm:py-6 flex flex-col md:flex-row  md:py-[30px] items-center justify-center md:justify-between  text-center md:text-left  text-[#fafafaFF]/70 space-y-1 ">
+                <div className="py-4 sm:py-6 flex flex-col md:flex-row  md:py-[30px] items-center justify-center md:justify-between  text-center md:text-left  text-[#fafafaFF]/70 space-y-1 text-[14px] md:text-[16px">
                     <div>
                         <p>© 2026 KeenKeeper. All rights reserved.</p>
                     </div>
