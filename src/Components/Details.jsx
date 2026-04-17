@@ -333,7 +333,7 @@ const FriendsDetailsPage = ({ params }) => {
                                                         ? new Date(
                                                               logs.date
                                                           ).toLocaleString(
-                                                              "en-BD",
+                                                              "en-US",
                                                               {
                                                                   month: "short",
                                                                   day: "numeric",

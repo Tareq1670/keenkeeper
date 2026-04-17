@@ -26,7 +26,7 @@ const LogList = ({ item }) => {
                         </span>
                     </h2>
                     <p className="text-[16px] text-[#64748B]">
-                        {new Date(date).toLocaleString("en-BD", {
+                        {new Date(date).toLocaleString("en-US", {
                             month: "short",
                             day: "numeric",
                             year: "numeric",
