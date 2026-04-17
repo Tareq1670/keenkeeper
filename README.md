@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌟 KeenKeeper
 
-## Getting Started
+**KeenKeeper** is a modern personal relationship management web application designed to help users track and nurture their meaningful connections. It provides a seamless way to log interactions and visualize social habits through an intuitive, data-driven dashboard.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework:** Next.js (React)  
+- **Styling:** Tailwind CSS & DaisyUI  
+- **Icons & Notifications:** React Icons & React-Toastify  
+- **State Management:** React Context API (for dynamic data handling)  
+- **Data Visualization:** Recharts / Chart.js (Pie Chart Analytics)  
+- **Deployment:** Vercel (or your preferred platform)  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Key Features
 
-## Learn More
+### 🔹 1. Dynamic Interaction Logging
+The core of KeenKeeper allows users to log "Calls," "Texts," and "Video Chats" in real-time. Using the React Context API, interaction data is instantly captured and updated across the application without needing a page refresh, ensuring a smooth and reactive user experience.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔹 2. Advanced Timeline Management
+The Timeline view offers a comprehensive history of all social interactions. It features:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 🔍 **Dynamic Searching:** Quickly find specific interactions by name or type.  
+- ⚙️ **Smart Filtering & Sorting:** Organize your history by date (Newest/Oldest) or category to gain better insights into your past connections.  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🔹 3. Data-Driven Friendship Analytics
+The "State" section transforms raw interaction data into visual insights. It features a dynamic Pie Chart that automatically calculates and displays the distribution of your communication methods. This allows users to see at a glance whether they prefer calling, texting, or video chatting.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📊 Overview
+
+> A clean and intuitive dashboard experience that helps you understand and improve your social habits through meaningful data visualization.
+
+---
+<img width="5000" height="1000" alt="Keenkeeper WebSite image" src="https://github.com/user-attachments/assets/c063ed96-a9f2-40b6-98a1-4374eea55cfd" />
