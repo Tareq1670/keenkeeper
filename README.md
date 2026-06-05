@@ -4,40 +4,61 @@
 
 ---
 
+## 🌐 Live Website
+
+**Live Demo:** https://your-live-link-here.com
+
+---
+
+## 📸 Project Preview
+
+![KeenKeeper Web App](https://github.com/user-attachments/assets/c063ed96-a9f2-40b6-98a1-4374eea55cfd)
+
+---
+
 ## 🚀 Technologies Used
 
-- **Framework:** Next.js (React)  
-- **Styling:** Tailwind CSS & DaisyUI  
-- **Icons & Notifications:** React Icons & React-Toastify  
-- **State Management:** React Context API (for dynamic data handling)  
-- **Data Visualization:** Recharts / Chart.js (Pie Chart Analytics)  
-- **Deployment:** Vercel (or your preferred platform)  
+* **Framework:** Next.js (React)
+* **Styling:** Tailwind CSS & DaisyUI
+* **Icons & Notifications:** React Icons & React-Toastify
+* **State Management:** React Context API
+* **Data Visualization:** Recharts
+* **Deployment:** Vercel
 
 ---
 
 ## ✨ Key Features
 
-### 🔹 1. Dynamic Interaction Logging
-The core of KeenKeeper allows users to log "Calls," "Texts," and "Video Chats" in real-time. Using the React Context API, interaction data is instantly captured and updated across the application without needing a page refresh, ensuring a smooth and reactive user experience.
+### 🔹 Dynamic Interaction Logging
+
+Users can log Calls, Texts, and Video Chats in real time. The application uses React Context API to instantly update data across all components without page reload.
 
 ---
 
-### 🔹 2. Advanced Timeline Management
-The Timeline view offers a comprehensive history of all social interactions. It features:
+### 🔹 Advanced Timeline Management
 
-- 🔍 **Dynamic Searching:** Quickly find specific interactions by name or type.  
-- ⚙️ **Smart Filtering & Sorting:** Organize your history by date (Newest/Oldest) or category to gain better insights into your past connections.  
+The timeline view provides a complete history of interactions with powerful features:
+
+* 🔍 Search interactions by name or type
+* ⚙️ Filter and sort by date (Newest/Oldest)
+* 📊 Organized view of all communication history
 
 ---
 
-### 🔹 3. Data-Driven Friendship Analytics
-The "State" section transforms raw interaction data into visual insights. It features a dynamic Pie Chart that automatically calculates and displays the distribution of your communication methods. This allows users to see at a glance whether they prefer calling, texting, or video chatting.
+### 🔹 Data-Driven Analytics Dashboard
+
+The analytics section visualizes user interaction patterns using a dynamic Pie Chart. It helps users understand their communication preferences (Calling, Texting, Video Chatting) at a glance.
 
 ---
 
 ## 📊 Overview
 
-> A clean and intuitive dashboard experience that helps you understand and improve your social habits through meaningful data visualization.
+A clean, responsive, and intuitive dashboard experience that helps users understand and improve their social connection habits through meaningful data visualization.
 
 ---
-<img width="5000" height="1000" alt="Keenkeeper WebSite image" src="https://github.com/user-attachments/assets/c063ed96-a9f2-40b6-98a1-4374eea55cfd" />
+
+## 👨‍💻 Author
+
+**Your Name Here**
+
+---
