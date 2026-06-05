@@ -5,9 +5,9 @@ import { Suspense } from "react";
 import { ClipLoader } from "react-spinners";
 
 export default function Home() {
-    const promiseData = fetch(
-        "https://keenkeeper-umber.vercel.app/friendsdata.json",{cache:"no-store"}
-    ).then((res) => res.json());
+    const promiseData = fetch("https://keenkeeper-umber.vercel.app/friendsData.json", {
+    cache: "no-store"
+}).then((res) => res.json());
     return (
         <div>
             <Header />
