@@ -20,7 +20,7 @@ import { toast } from "react-toastify";
 
 const friendsDataPromise = async () => {
     const res = await fetch(
-        "https://keenkeeper-umber.vercel.app/friendsdata.json",{cache:"no-store"}
+        "https://keenkeeper-umber.vercel.app/friendsData.json",{cache:"no-store"}
     );
     return res.json();
 };
